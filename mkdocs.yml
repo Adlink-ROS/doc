@@ -1,0 +1,15 @@
+site_name: ADLINK Neudon Documents
+pages:
+  - Introduction: index.md
+  - About Neuron: about-neuron.md
+theme: material
+extra_css:
+  - 'stylesheets/extra.css'
+extra_javascript:
+  - 'javascripts/extra.js'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/Adlink-ROS'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/channel/UCscUHwoBilWqTBkN0KNoEkQ/videos'
