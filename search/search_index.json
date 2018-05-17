@@ -82,13 +82,53 @@
         },
         {
             "location": "/neuron-neuronbot/",
-            "text": "Neuron NeuronBot",
+            "text": "Neuron NeuronBot\n\n\nYou can check the source code from \nNeuronBot repository\n\n\nAbstract\n\n\nThe purpose of this pkg is to demonstrate two main features of ADLINK Neuron miniITX platform. \n\n1. Computing Power: \n\n   The host robot is able to follow human by integrating all outputs from SPENCER robot framework, intel \"object analytics\" pkg and laser based leg_tracker pkg.\n   ADLINK Neuron illustates its computing power to run these detecting/tracking algorithms smoothly. (HOG+SVM, CNN, Template matching, EKF, MobileNetSSD, etc)\n\n2. ROS2/DDS Capabilities:\n\n   The host robot (for following) is publishing its own pose with respect to known map through ROS2/DDS layer while following a human.\n   On the other hand, the client robot (random wandering), could avoid the host robot by receiving host's pose and replaning its path.   \n\n\nOfficial Slides\n\n\nYoutube Video\n\n\nYoutube Video\n\n\n  \n\n\nDevelopers & Team\n\n\nHaoChih Lin\n\nAlan Chen\n\nChester Tseng\n\nBill Wang\n\nErik Boasson\n\nRyan Chen  \n\n\nADLINK Technology, Inc\n\nAdvanced Robotic Platform Group  \n\n\nLicense\n\n\nApache 2.0\n\nCopyright 2018 ADLINK Technology, Inc.  \n\n\nTutorial\n\n\nSystem Prerequisite\n\n\n[Packages]\n\n\n Realsense D400\n\n  Source: https://github.com/intel-ros/realsense\n\n  Notice: About RealSense SDK 2.0, we highly recommed binary version.\n\n  Testing: $ roslaunch realsense2_camera demo_pointcloud.launch\n\n  \n\n\n Astra Pro OR Astra (alternative choose for camera) \n\n  Binary: $ sudo apt-get install ros-kinetic-astra\n\n  Source: https://github.com/orbbec/ros_astra_camera\n\n  Notice: Remember to create udev. If possible, please buy Astra instead of Astra Pro!\n\n  \n\n\n YDLidar \n\n  Source: https://github.com/EAIBOT/ydlidar\n\n  Notice: Remember to laod udev. Could be replaced by any type of lidar.\n\n  Testing: $ roslaunch ydlidar x4.launch\n\n  \n\n\n Navigation\n\n  Binary: $ sudo apt-get install ros-kinetic-navigation\n\n  Source: https://github.com/ros-planning/navigation\n\n  Notice: if \"replan\" mode of global planner is malfunctioned, please compile whole pkgs from source.\n\n  Testing: $ roslaunch spencer_people_tracking_launch tracking_on_bagfile.launch\n\n  \n\n\n SPENCER\n\n  Binary: https://github.com/spencer-project/spencer_people_tracking#installation-from-l-cas-package-repository\n\n  Source: https://github.com/spencer-project/spencer_people_tracking#installation-from-source\n\n  Notice: Unless you want to use HOG+SVM [CUDA required], we highly recommend binary version.\n\n  \n\n\n Intel object analytics\n\n  Source: https://github.com/intel/ros_object_analytics\n\n  Notice: Tested with NCSDK v1.12, ros_object_analytics should be \"devel\" branch\n\n  Testing: \n\n\n movidius_ncs \n\n     $ roslaunch realsense2_camera demo_pointcloud.launch\n\n     $ roslaunch movidius_ncs_launch ncs_camera.launch cnn_type:=mobilenetssd input_topic:=/camera/color/image_raw  \n\n     $ roslaunch movidius_ncs_launch ncs_stream_detection_example.launch camera_topic:=\"/camera/color/image_raw\"\n\n\n object_analytics \n\n     $ roslaunch realsense2_camera demo_pointcloud.launch\n\n     $ roslaunch object_analytics_launch analytics_movidius_ncs.launch input_points:=/camera/depth/color/points\n\n  \n\n\n leg_tracker\n\n  Source: https://github.com/angusleigh/leg_tracker\n\n  Notice: The kinetic branch only supports OpenCv 3.3 and higher ver.\n\n  Testing: $ roslaunch leg_tracker demo_stationary_simple_environment.launch\n\n  \n\n\n Turtlebot2\n\n  Binaty: $ sudo apt-get install ros-kinetic-turtlebot\n\n  Source: https://github.com/turtlebot/turtlebot\n\n  Notice: We highly recommed you to install binary version.\n\n  \n\n\nLaunching Steps\n\n\n\n\nMapping & Time Synchronizing  \n\n\nHost robot (for following)\n\n  $ roslaunch adlink_neuronbot NeuronBot_Demo_Host_AIO.launch\n\n  OR (script)\n\n  $ ./PATH_TO_WORKSPACE/adlink_neuronbot/autostart/NeuronBot_Demo_Host_AutoStart.sh  \n\n\nClient robot (for avoidance)\n\n  $ roslaunch adlink_neuronbot NeuronBot_Demo_Client_AIO.launch\n\n  OR (script)\n\n  $ ./PATH_TO_WORKSPACE/adlink_neuronbot/autostart/NeuronBot_Demo_Client_AutoStart.sh  \n\n\n\n\nKnown Issues\n\n\n\n\nQ: move_base replanning does not work\n\n  A: update your move_base pkg to the latest one, or compile it from source  \n\n\n\n\nRoadmap\n\n\n\n\nFix PCL detector  \n\n\nROS2 driver for camera  \n\n\nFix followMe node (fused inputs version)  \n\n\nCreate custom ROS2/DDS msg  \n\n\nIntegrate with object_analytics",
             "title": "Neuron NeuronBot"
         },
         {
             "location": "/neuron-neuronbot/#neuron-neuronbot",
-            "text": "",
+            "text": "You can check the source code from  NeuronBot repository",
             "title": "Neuron NeuronBot"
+        },
+        {
+            "location": "/neuron-neuronbot/#abstract",
+            "text": "The purpose of this pkg is to demonstrate two main features of ADLINK Neuron miniITX platform.  \n1. Computing Power:  \n   The host robot is able to follow human by integrating all outputs from SPENCER robot framework, intel \"object analytics\" pkg and laser based leg_tracker pkg.\n   ADLINK Neuron illustates its computing power to run these detecting/tracking algorithms smoothly. (HOG+SVM, CNN, Template matching, EKF, MobileNetSSD, etc) \n2. ROS2/DDS Capabilities: \n   The host robot (for following) is publishing its own pose with respect to known map through ROS2/DDS layer while following a human.\n   On the other hand, the client robot (random wandering), could avoid the host robot by receiving host's pose and replaning its path.     Official Slides  Youtube Video  Youtube Video",
+            "title": "Abstract"
+        },
+        {
+            "location": "/neuron-neuronbot/#developers-team",
+            "text": "HaoChih Lin \nAlan Chen \nChester Tseng \nBill Wang \nErik Boasson \nRyan Chen    ADLINK Technology, Inc \nAdvanced Robotic Platform Group",
+            "title": "Developers &amp; Team"
+        },
+        {
+            "location": "/neuron-neuronbot/#license",
+            "text": "Apache 2.0 \nCopyright 2018 ADLINK Technology, Inc.",
+            "title": "License"
+        },
+        {
+            "location": "/neuron-neuronbot/#tutorial",
+            "text": "",
+            "title": "Tutorial"
+        },
+        {
+            "location": "/neuron-neuronbot/#system-prerequisite",
+            "text": "[Packages]   Realsense D400 \n  Source: https://github.com/intel-ros/realsense \n  Notice: About RealSense SDK 2.0, we highly recommed binary version. \n  Testing: $ roslaunch realsense2_camera demo_pointcloud.launch \n     Astra Pro OR Astra (alternative choose for camera)  \n  Binary: $ sudo apt-get install ros-kinetic-astra \n  Source: https://github.com/orbbec/ros_astra_camera \n  Notice: Remember to create udev. If possible, please buy Astra instead of Astra Pro! \n     YDLidar  \n  Source: https://github.com/EAIBOT/ydlidar \n  Notice: Remember to laod udev. Could be replaced by any type of lidar. \n  Testing: $ roslaunch ydlidar x4.launch \n     Navigation \n  Binary: $ sudo apt-get install ros-kinetic-navigation \n  Source: https://github.com/ros-planning/navigation \n  Notice: if \"replan\" mode of global planner is malfunctioned, please compile whole pkgs from source. \n  Testing: $ roslaunch spencer_people_tracking_launch tracking_on_bagfile.launch \n     SPENCER \n  Binary: https://github.com/spencer-project/spencer_people_tracking#installation-from-l-cas-package-repository \n  Source: https://github.com/spencer-project/spencer_people_tracking#installation-from-source \n  Notice: Unless you want to use HOG+SVM [CUDA required], we highly recommend binary version. \n     Intel object analytics \n  Source: https://github.com/intel/ros_object_analytics \n  Notice: Tested with NCSDK v1.12, ros_object_analytics should be \"devel\" branch \n  Testing:    movidius_ncs  \n     $ roslaunch realsense2_camera demo_pointcloud.launch \n     $ roslaunch movidius_ncs_launch ncs_camera.launch cnn_type:=mobilenetssd input_topic:=/camera/color/image_raw   \n     $ roslaunch movidius_ncs_launch ncs_stream_detection_example.launch camera_topic:=\"/camera/color/image_raw\"   object_analytics  \n     $ roslaunch realsense2_camera demo_pointcloud.launch \n     $ roslaunch object_analytics_launch analytics_movidius_ncs.launch input_points:=/camera/depth/color/points \n     leg_tracker \n  Source: https://github.com/angusleigh/leg_tracker \n  Notice: The kinetic branch only supports OpenCv 3.3 and higher ver. \n  Testing: $ roslaunch leg_tracker demo_stationary_simple_environment.launch \n     Turtlebot2 \n  Binaty: $ sudo apt-get install ros-kinetic-turtlebot \n  Source: https://github.com/turtlebot/turtlebot \n  Notice: We highly recommed you to install binary version.",
+            "title": "System Prerequisite"
+        },
+        {
+            "location": "/neuron-neuronbot/#launching-steps",
+            "text": "Mapping & Time Synchronizing    Host robot (for following) \n  $ roslaunch adlink_neuronbot NeuronBot_Demo_Host_AIO.launch \n  OR (script) \n  $ ./PATH_TO_WORKSPACE/adlink_neuronbot/autostart/NeuronBot_Demo_Host_AutoStart.sh    Client robot (for avoidance) \n  $ roslaunch adlink_neuronbot NeuronBot_Demo_Client_AIO.launch \n  OR (script) \n  $ ./PATH_TO_WORKSPACE/adlink_neuronbot/autostart/NeuronBot_Demo_Client_AutoStart.sh",
+            "title": "Launching Steps"
+        },
+        {
+            "location": "/neuron-neuronbot/#known-issues",
+            "text": "Q: move_base replanning does not work \n  A: update your move_base pkg to the latest one, or compile it from source",
+            "title": "Known Issues"
+        },
+        {
+            "location": "/neuron-neuronbot/#roadmap",
+            "text": "Fix PCL detector    ROS2 driver for camera    Fix followMe node (fused inputs version)    Create custom ROS2/DDS msg    Integrate with object_analytics",
+            "title": "Roadmap"
         },
         {
             "location": "/neuron-omnibot/",
