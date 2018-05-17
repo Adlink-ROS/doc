@@ -27,13 +27,58 @@
         },
         {
             "location": "/neuron-ddsbot/",
-            "text": "Neuron DDSBot",
+            "text": "Neuron DDSBot\n\n\nYou can check the source code from \nDDSBot repository\n\n\nAbstract\n\n\nSwarm robots using Opensplice DDS with ROS 1&2\n\n[Official Slides] \nhttps://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/Next-Gen_Smart_Manufacturing.pdf\n\n[Youtube Video] \nhttps://www.youtube.com/watch?v=7ZIDkLKD4Y8\n\n\n\n\nDeveloper & Team\n\n\nHaoChih Lin (haochih.lin@adlinktech.com)\n\nChester Tseng (chester.tseng@adlinktech.com)\n\nErik Boasson (erik.boasson@adlinktech.com)\n\nRyan Chen (ryanjb.chen@adlinktech.com)\n\n\nADLINK Technology, Inc\n\nAdvanced Robotic Platform Group\n\n\nLicense\n\n\nApache 2.0\n\nCopyright 2017 ADLINK Technology, Inc.\n\n\nSoftware Architecture\n\n\n\n\nHardware Architecture\n\n\n\nBuild your own low-cost ddsbot (~250USD)\n\n[Assembling PDF] \nadlink_ddsbot/document/hardware/adlink_ddsbot_hardware.pdf\n\n\n[Arduino firmware]\n\nFor UNO (motor control): adlink_ddsbot/document/arduino/motor_control/motor_control.ino\n\nFor Nano (GY85 IMU): adlink_ddsbot/document/arduino/Razor_AHRS/Razor_AHRS.ino\n\n\nTutorial\n\n\nSystem prerequisite\n\n\n[Desktop]\n\n\n\n\nROS 1.0\n  (Kinetic: \nhttp://wiki.ros.org/kinetic/Installation/Ubuntu)\n\n\nROS 2.0 (tested on Ardent)\n\n\ncreate your own catkin_ws\n  (\nhttp://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)\n\n\nInstall required dependencies:\n\n\n$ sudo apt-get install git ros-kinetic-navigation ros-kinetic-geographic-msgs ros-kinetic-slam-gmapping ros-kinetic-mrpt-slam ros-kinetic-mrpt-icp-slam-2d ros-kinetic-robot-localization ros-kinetic-stage* -y\n\n\ngit clone adlink_ddsbot to your catkin_ws/src and compile\n\n\n\n\nSimulation (stage, two computers)\n\n\n\n\nCheck the hostname (should be unique in the network)\n\n\nCheck the system time synchronization ($ sudo ntpdate IP_TARGET)\n\n\nOpen a terminal (remember to source ros2 & ros1 setup.bash)\n\n\n$ export HOSTNAME\n\n\n$ roslaunch adlink_ddsbot Swarm_Sim_Stage.launch\n\n\n$ ros2 run ros1_bridge parameter_bridge\n\n\nRepeat the same steps on another computer/robot\n    (both should be in the same network)\n\n\nThen, each robot can be aware of all the others shown on the rviz.\n\n\n\n\nReal robot (raspberryPi3)\n\n\n[Image files]\nDownload pre-built image for Pi3 (ubuntu mate 16.04, ros 1&2, 13GB)\n\nlink: \nhttps://drive.google.com/open?id=0BxI3PXhTd_3HWmh2c2VSbWFNRHM\n\nExtract the file from .gz file:\n\n$ gunzip -c ADLINK_DDSBot_Pi3_20171002.img.gz > ADLINK_DDSBot_Pi3_20171002.img\n\nBurn image file to SD card\n\n\n[Setup steps]\n\n\n\n\nConnect Pi3 with your desktop by either ethernet cable or debug cable\n\n\nPower-on and login: (passward is: adlinkros)\n\n\nhdmi display: you can see the ADLink logo on the desktop\n\n\nethernet: the default id address of provided image is 10.0.0.1 (\n$ ssh pi@10.0.0.1\n)\n\n\ndebug cable: enter the password\n\n\nChange robot's hostname and connect to local network\n\n\nSynchronize the system time through AP server/specific computer\n    (\n$ sudo ntpdate IP_ADDRESS\n)\n\n\nChange the ROS 1 multi-machines variables in .bashrc\n    (for each robot, it has own roscore)\n\n\nFor Single robot test: \n$ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Single.launch\n\n\nFor Swarm robots demo:\n\n\n$ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Swarm.launch\n\n\n$ ros2 run ros1_bridge parameter_bridge\n\n\nUsing remote computer to initial & set goal for the ddsbot through RVIZ\n\n\nDo the same thing on another ddsbots (in the same network),\n    once the ros1_bridge has been executed, all others ddsbots can be visualized on RVIZ.\n\n\n\n\n[Node Graph]",
             "title": "Neuron DDSBot"
         },
         {
             "location": "/neuron-ddsbot/#neuron-ddsbot",
-            "text": "",
+            "text": "You can check the source code from  DDSBot repository",
             "title": "Neuron DDSBot"
+        },
+        {
+            "location": "/neuron-ddsbot/#abstract",
+            "text": "Swarm robots using Opensplice DDS with ROS 1&2 \n[Official Slides]  https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/Next-Gen_Smart_Manufacturing.pdf \n[Youtube Video]  https://www.youtube.com/watch?v=7ZIDkLKD4Y8",
+            "title": "Abstract"
+        },
+        {
+            "location": "/neuron-ddsbot/#developer-team",
+            "text": "HaoChih Lin (haochih.lin@adlinktech.com) \nChester Tseng (chester.tseng@adlinktech.com) \nErik Boasson (erik.boasson@adlinktech.com) \nRyan Chen (ryanjb.chen@adlinktech.com)  ADLINK Technology, Inc \nAdvanced Robotic Platform Group",
+            "title": "Developer &amp; Team"
+        },
+        {
+            "location": "/neuron-ddsbot/#license",
+            "text": "Apache 2.0 \nCopyright 2017 ADLINK Technology, Inc.",
+            "title": "License"
+        },
+        {
+            "location": "/neuron-ddsbot/#software-architecture",
+            "text": "",
+            "title": "Software Architecture"
+        },
+        {
+            "location": "/neuron-ddsbot/#hardware-architecture",
+            "text": "Build your own low-cost ddsbot (~250USD) \n[Assembling PDF]  adlink_ddsbot/document/hardware/adlink_ddsbot_hardware.pdf  [Arduino firmware] \nFor UNO (motor control): adlink_ddsbot/document/arduino/motor_control/motor_control.ino \nFor Nano (GY85 IMU): adlink_ddsbot/document/arduino/Razor_AHRS/Razor_AHRS.ino",
+            "title": "Hardware Architecture"
+        },
+        {
+            "location": "/neuron-ddsbot/#tutorial",
+            "text": "",
+            "title": "Tutorial"
+        },
+        {
+            "location": "/neuron-ddsbot/#system-prerequisite",
+            "text": "[Desktop]   ROS 1.0\n  (Kinetic:  http://wiki.ros.org/kinetic/Installation/Ubuntu)  ROS 2.0 (tested on Ardent)  create your own catkin_ws\n  ( http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)  Install required dependencies:  $ sudo apt-get install git ros-kinetic-navigation ros-kinetic-geographic-msgs ros-kinetic-slam-gmapping ros-kinetic-mrpt-slam ros-kinetic-mrpt-icp-slam-2d ros-kinetic-robot-localization ros-kinetic-stage* -y  git clone adlink_ddsbot to your catkin_ws/src and compile",
+            "title": "System prerequisite"
+        },
+        {
+            "location": "/neuron-ddsbot/#simulation-stage-two-computers",
+            "text": "Check the hostname (should be unique in the network)  Check the system time synchronization ($ sudo ntpdate IP_TARGET)  Open a terminal (remember to source ros2 & ros1 setup.bash)  $ export HOSTNAME  $ roslaunch adlink_ddsbot Swarm_Sim_Stage.launch  $ ros2 run ros1_bridge parameter_bridge  Repeat the same steps on another computer/robot\n    (both should be in the same network)  Then, each robot can be aware of all the others shown on the rviz.",
+            "title": "Simulation (stage, two computers)"
+        },
+        {
+            "location": "/neuron-ddsbot/#real-robot-raspberrypi3",
+            "text": "[Image files]\nDownload pre-built image for Pi3 (ubuntu mate 16.04, ros 1&2, 13GB) \nlink:  https://drive.google.com/open?id=0BxI3PXhTd_3HWmh2c2VSbWFNRHM \nExtract the file from .gz file: $ gunzip -c ADLINK_DDSBot_Pi3_20171002.img.gz > ADLINK_DDSBot_Pi3_20171002.img \nBurn image file to SD card  [Setup steps]   Connect Pi3 with your desktop by either ethernet cable or debug cable  Power-on and login: (passward is: adlinkros)  hdmi display: you can see the ADLink logo on the desktop  ethernet: the default id address of provided image is 10.0.0.1 ( $ ssh pi@10.0.0.1 )  debug cable: enter the password  Change robot's hostname and connect to local network  Synchronize the system time through AP server/specific computer\n    ( $ sudo ntpdate IP_ADDRESS )  Change the ROS 1 multi-machines variables in .bashrc\n    (for each robot, it has own roscore)  For Single robot test:  $ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Single.launch  For Swarm robots demo:  $ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Swarm.launch  $ ros2 run ros1_bridge parameter_bridge  Using remote computer to initial & set goal for the ddsbot through RVIZ  Do the same thing on another ddsbots (in the same network),\n    once the ros1_bridge has been executed, all others ddsbots can be visualized on RVIZ.   [Node Graph]",
+            "title": "Real robot (raspberryPi3)"
         },
         {
             "location": "/neuron-neuronbot/",
