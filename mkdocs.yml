@@ -1,7 +1,9 @@
 site_name: ADLINK Neuron Documents
 pages:
   - Introduction: index.md
-  - About Neuron: about-neuron.md
+  - Neuron SEMA User Guide: sema-user-guide.md
+  - Neuron DDSBot: neuron-ddsbot.md
+  - Neuron NeuronBot: neuron-neuronbot.md
   - Neuron OmniBot: neuron-omnibot.md
 theme: material
 extra_css:
