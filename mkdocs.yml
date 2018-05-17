@@ -1,7 +1,8 @@
-site_name: ADLINK Neudon Documents
+site_name: ADLINK Neuron Documents
 pages:
   - Introduction: index.md
   - About Neuron: about-neuron.md
+  - Neuron OmniBot: neuron-omnibot.md
 theme: material
 extra_css:
   - 'stylesheets/extra.css'
