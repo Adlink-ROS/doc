@@ -276,6 +276,17 @@ The physical Networking can be easily achieved (and expanded) with a single wifi
 * `rosservice`  : ROS service server functions
 
 ## More Info
+
+### Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BLua6SY8mh4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-oJpUHXYUhs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/utoLoRYI5qc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QqNPT3JQaK4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ### Reference
 [Neuron VDMC Communication and operation manual](neuron-omnibot/Neuron%20OmniBot%20VDMC%20Manual.pdf?raw=true)
 ### Notice
