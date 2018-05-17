@@ -11,7 +11,23 @@
 
     
     <url>
-     <loc>/about-neuron/</loc>
+     <loc>/sema-user-guide/</loc>
+     <lastmod>2018-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/neuron-ddsbot/</loc>
+     <lastmod>2018-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/neuron-neuronbot/</loc>
      <lastmod>2018-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>

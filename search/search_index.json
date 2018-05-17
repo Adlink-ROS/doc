@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to ADLINK Neuron's Documents",
+            "text": "Welcome to ADLINK Neuron's Documents\n\n\n\n\n\n\nWhy Neuron ?\n\n\nADLINK Technology's industrial-grade ROS development kit, Neuron, boasts the characteristic in which the CPU can be change according to requirements, and has a wide variety of I/O pins. \n\n\nNeuron also could integrate GPU for supporting the AI computing platforms, which brings about great acceleration for robot computation to meet your needs for robot applications. Moreover, Neuron is compatible with ROS2, allowing to control the robot through the ROS2 application library with rich open source, such as cameras, navigation, and motion control, so that you can develop the application within the shortest possible time and reduce time to market.",
             "title": "Introduction"
         },
         {
@@ -11,19 +11,39 @@
             "title": "Welcome to ADLINK Neuron's Documents"
         },
         {
-            "location": "/about-neuron/",
-            "text": "About Neuron\n\n\n\n\nWhy Neuron ?\n\n\nADLINK Technology's industrial-grade ROS development kit, Neuron, boasts the characteristic in which the CPU can be change according to requirements, and has a wide variety of I/O pins. \n\n\nNeuron also could integrate GPU for supporting the AI computing platforms, which brings about great acceleration for robot computation to meet your needs for robot applications. Moreover, Neuron is compatible with ROS2, allowing to control the robot through the ROS2 application library with rich open source, such as cameras, navigation, and motion control, so that you can develop the application within the shortest possible time and reduce time to market.",
-            "title": "About Neuron"
-        },
-        {
-            "location": "/about-neuron/#about-neuron",
-            "text": "",
-            "title": "About Neuron"
-        },
-        {
-            "location": "/about-neuron/#why-neuron",
+            "location": "/#why-neuron",
             "text": "ADLINK Technology's industrial-grade ROS development kit, Neuron, boasts the characteristic in which the CPU can be change according to requirements, and has a wide variety of I/O pins.   Neuron also could integrate GPU for supporting the AI computing platforms, which brings about great acceleration for robot computation to meet your needs for robot applications. Moreover, Neuron is compatible with ROS2, allowing to control the robot through the ROS2 application library with rich open source, such as cameras, navigation, and motion control, so that you can develop the application within the shortest possible time and reduce time to market.",
             "title": "Why Neuron ?"
+        },
+        {
+            "location": "/sema-user-guide/",
+            "text": "Neuron SEMA User Guide",
+            "title": "Neuron SEMA User Guide"
+        },
+        {
+            "location": "/sema-user-guide/#neuron-sema-user-guide",
+            "text": "",
+            "title": "Neuron SEMA User Guide"
+        },
+        {
+            "location": "/neuron-ddsbot/",
+            "text": "Neuron DDSBot",
+            "title": "Neuron DDSBot"
+        },
+        {
+            "location": "/neuron-ddsbot/#neuron-ddsbot",
+            "text": "",
+            "title": "Neuron DDSBot"
+        },
+        {
+            "location": "/neuron-neuronbot/",
+            "text": "Neuron NeuronBot",
+            "title": "Neuron NeuronBot"
+        },
+        {
+            "location": "/neuron-neuronbot/#neuron-neuronbot",
+            "text": "",
+            "title": "Neuron NeuronBot"
         },
         {
             "location": "/neuron-omnibot/",
