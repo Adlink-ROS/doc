@@ -11,18 +11,13 @@ Swarm robots using Opensplice DDS with ROS 1&2
 
 ## Developer & Team
 
-HaoChih Lin (haochih.lin@adlinktech.com)  
-Chester Tseng (chester.tseng@adlinktech.com)  
-Erik Boasson (erik.boasson@adlinktech.com)  
-Ryan Chen (ryanjb.chen@adlinktech.com)
+HaoChih Lin ([haochih.lin@adlinktech.com](mailto:haochih.lin@adlinktech.com))  
+Chester Tseng ([chester.tseng@adlinktech.com](mailto:chester.tseng@adlinktech.com))  
+Erik Boasson ([erik.boasson@adlinktech.com](mailto:erik.boasson@adlinktech.com))  
+Ryan Chen ([ryanjb.chen@adlinktech.com](mailto:ryanjb.chen@adlinktech.com))
 
 ADLINK Technology, Inc  
 Advanced Robotic Platform Group
-
-## License
-
-Apache 2.0  
-Copyright 2017 ADLINK Technology, Inc.
 
 ## Software Architecture
 
@@ -35,8 +30,8 @@ Build your own low-cost ddsbot (~250USD)
 [Assembling PDF] [adlink_ddsbot/document/hardware/adlink_ddsbot_hardware.pdf](https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/hardware/adlink_ddsbot_hardware.pdf)
 
 [Arduino firmware]  
-For UNO (motor control): adlink_ddsbot/document/arduino/motor_control/motor_control.ino  
-For Nano (GY85 IMU): adlink_ddsbot/document/arduino/Razor_AHRS/Razor_AHRS.ino
+For UNO (motor control): [adlink_ddsbot/document/arduino/motor_control/motor_control.ino](https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/arduino/motor_control/motor_control.ino) 
+For Nano (GY85 IMU): [adlink_ddsbot/document/arduino/Razor_AHRS/Razor_AHRS.ino](https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/arduino/Razor_AHRS/Razor_AHRS.ino)
 
 ## Tutorial
 
@@ -95,4 +90,11 @@ Burn image file to SD card
     once the ros1_bridge has been executed, all others ddsbots can be visualized on RVIZ.
 
 [Node Graph]
+
 ![alt text](https://raw.githubusercontent.com/Adlink-ROS/adlink_ddsbot/release-1.0/document/adlink_ddsbot_nodes.png)
+
+## License
+
+Apache 2.0  
+Copyright 2017 ADLINK Technology, Inc.
+

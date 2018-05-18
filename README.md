@@ -5,7 +5,7 @@ All documents about Neuron will be here !
 ## How to install tools ?
 
 ```
-$> pip install mkdocs
+$> pip install -r requirements.txt
 ```
 
 ## How to use ?
