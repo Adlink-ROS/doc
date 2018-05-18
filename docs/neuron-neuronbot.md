@@ -19,8 +19,6 @@ The purpose of this pkg is to demonstrate two main features of ADLINK Neuron min
 
 [https://github.com/Adlink-ROS/adlink_neuronbot/blob/master/document/ADLINK_NeuronBot_20180313.pdf](https://github.com/Adlink-ROS/adlink_neuronbot/blob/master/document/ADLINK_NeuronBot_20180313.pdf)
 
-[ADLINK Neuron Release Video I]
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RC6XvTvTs9Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 [ADLINK Neuron Release Video II]
@@ -120,6 +118,7 @@ The purpose of this pkg is to demonstrate two main features of ADLINK Neuron min
 * Integrate with object_analytics  
 
 ## Developers & Team
+* Ewing Kang
 * HaoChih Lin  
 * Alan Chen  
 * Chester Tseng  
