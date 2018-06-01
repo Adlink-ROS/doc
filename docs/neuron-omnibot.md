@@ -33,7 +33,7 @@ You'll need the ADLINK SEMA library and a compatible motherboard to run this exa
 
 ### Installing
 #### a) hardware setup 
-Connect all the wire properly according to this diagram: ([click to download](doc/OmniBot%20wiring.jpg?raw=true))
+Connect all the wire properly according to this diagram: ([click to download](neuron-omnibot/OmniBot%20wiring.jpg?raw=true))
 ![OmniBot wiring](neuron-omnibot/OmniBot%20wiring.jpg)
 
 1. <abbr title="Vehicle Dynamic and Motor Controller">VDMC</abbr> <sup>[manual](#reference)</sup>
