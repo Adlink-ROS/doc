@@ -1,7 +1,8 @@
 site_name: ADLINK Neuron Documents
 pages:
   - Introduction: index.md
-  - Neuron SEMA User Guide: sema-user-guide.md
+  - Neuron SEMA User Guide:
+    - SEMA GPIO: sema/sema-gpio.md
   - Neuron DDSBot: neuron-ddsbot.md
   - Neuron NeuronBot: neuron-neuronbot.md
   - Neuron OmniBot: neuron-omnibot.md
