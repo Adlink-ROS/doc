@@ -16,14 +16,74 @@
             "title": "Why Neuron ?"
         },
         {
-            "location": "/sema-user-guide/",
-            "text": "Neuron SEMA User Guide",
-            "title": "Neuron SEMA User Guide"
+            "location": "/sema/sema-gpio/",
+            "text": "SEMA User Guide for GPIO with ADLNK Neuron AmITX-Motherboard\n\n\nADLINK demo gpio example ROS package\n:\n\n\nAdlink-ROS/neuron_demo_gpio\n\n\nThis package is a demonstration of the integration of ROS2 and onboard GPIO control. It will provide ADLINK omni-NeuronBot peripheral sensor and visual indicators of robot state. The GPIO control is implemented with the ADLINK Smart Embedded Management Agent (SEMA) function, which comes with the Neuron AmITX-Motherboard. The SEMA features various board monitoring, failsafe, as well as GPIO and I2C functionality.\n\n\n\n\n\nGetting Started\n\n\nThese instructions will get you a copy of this demo and running on your local machine.\n\n\nPrerequisites\n\n\n\n\nHardware and library\n\nYou'll need the ADLINK SEMA library and a compatible motherboard to run this example. You can conatct \nbill.wang@adlinktech.com\n for more information.\n\n\nDownload the source of this project to your ROS2 workspace\n\n\ncd ros2_ws/src/ros2\n    git clone https://github.com/EwingKang/neuron_demo_gpio.git\n  \n\n\n4 LEDs, 2 switches(one tactile, one contact)\n\n\nYour motherboard and GPIO connected  \n\n\n\n\nInstalling\n\n\n\n\n\n\nInstall ADLINK SEMA\n\n\n\n\n\n\nSetup soft link (by executing \nsetlink.sh\n under \n/lib\n )\n\nRun the following command in the terminal command. If you get something like \nerror: no such file as...\n, you'll need to make the setlink.sh executable by \nchmod +x setlink.sh\n.\n    \ncd ${project_root}/lib\n        e.g.: cd ros2_ws/src/ros2/neuron_demo_gpio/lib\n    ./setlink.sh\n  \n\n\n\n\n\n\nCompile the source code\n\nWe'll need root access for library linking, that is done by the second step below; ROS2 uses \nament\n as its default build/installation tool.\n    \ncd ros2_ws\n    sudo -sE\n    ament build\n  \n\n\n\n\n\n\nRunning the demo\n\n\nEach of the code block below is a individual terminal with ROS2 environment veriable configured.\n\n \nros2 run demo_nodes_cpp talker -t neuron_gpio_cmd\n\n\n \nroot@neuron: ros2 run neuron_demo_gpio neuron_demo_gpio\n\n* \nroot@neuron: ros2 run neuron_demo_gpio neuron_omni_io\n  \n\n\nNOTE1: terminal can gain root access by first doing \nsudo -sE\n\n\nNOTE2: alternatively, you can publish the triggering topic manually by  \nrun ros2 topic pub /neuron_hwm_cmd std_msgs/String \"data: 0\"\n\n\nMonitoring\n\n\nYou can checkout the topics by:\n\n\nros2 topic list\n\nand\n\n\nros2 topic echo /TOPIC\n\n\nWhat should happened?\n\n\nBesides the information you see on each terminal, proper ROS2 topic is published. \n\n \nneuron_demo_gpio\n node\n\nSubscribes to topic \nneuron_gpio_cmd\n from \ntalker\n\nPublishes topic \nneuron_gpio_data\n of type \nstd_msgs::String\n\n\n \nneuron_omni_io\n node\n\nSubscribes to topic \nneuron_gpio_cmd\n from \ntalker\n\nControls the LEDs and read from switches  \n\n\nCode explained\n\n\nANY\n kind of std_msgs data from \nTOPIC_CMD\n will trigger the node to\npublish the next hardware monitor data to \nTOPOC_DATA\n topic.\n\n1.\n The setting of \nTOPIC_CMD\n and \nTOPIC_DATA\n can be found in \nreuronHwmNode.hpp\n\n\nNotice\n\n\n\n\nThis application \nMUST\n be running under \nSUDO -E\n since the SEMA driver need both root privilege and the user-exported variables.\n\n\n\n\nVersion\n\n\n0.1.0\n\n\nAuthors\n\n\n\n\nAlan Chen\n - \nInitial library\n - (alan.chen@adlinktech.com)\n\n\nEwing Kang\n - \nDemo implementation\n - (https://github.com/EwingKang)\n\n\n\n\nLicense\n\n\nThis project is licensed under the Apache License, Version 2.0\n\n\nAcknowledgments",
+            "title": "SEMA GPIO"
         },
         {
-            "location": "/sema-user-guide/#neuron-sema-user-guide",
+            "location": "/sema/sema-gpio/#sema-user-guide-for-gpio-with-adlnk-neuron-amitx-motherboard",
+            "text": "ADLINK demo gpio example ROS package :  Adlink-ROS/neuron_demo_gpio  This package is a demonstration of the integration of ROS2 and onboard GPIO control. It will provide ADLINK omni-NeuronBot peripheral sensor and visual indicators of robot state. The GPIO control is implemented with the ADLINK Smart Embedded Management Agent (SEMA) function, which comes with the Neuron AmITX-Motherboard. The SEMA features various board monitoring, failsafe, as well as GPIO and I2C functionality.",
+            "title": "SEMA User Guide for GPIO with ADLNK Neuron AmITX-Motherboard"
+        },
+        {
+            "location": "/sema/sema-gpio/#getting-started",
+            "text": "These instructions will get you a copy of this demo and running on your local machine.",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/sema/sema-gpio/#prerequisites",
+            "text": "Hardware and library \nYou'll need the ADLINK SEMA library and a compatible motherboard to run this example. You can conatct  bill.wang@adlinktech.com  for more information.  Download the source of this project to your ROS2 workspace  cd ros2_ws/src/ros2\n    git clone https://github.com/EwingKang/neuron_demo_gpio.git     4 LEDs, 2 switches(one tactile, one contact)  Your motherboard and GPIO connected",
+            "title": "Prerequisites"
+        },
+        {
+            "location": "/sema/sema-gpio/#installing",
+            "text": "Install ADLINK SEMA    Setup soft link (by executing  setlink.sh  under  /lib  ) \nRun the following command in the terminal command. If you get something like  error: no such file as... , you'll need to make the setlink.sh executable by  chmod +x setlink.sh .\n     cd ${project_root}/lib\n        e.g.: cd ros2_ws/src/ros2/neuron_demo_gpio/lib\n    ./setlink.sh       Compile the source code \nWe'll need root access for library linking, that is done by the second step below; ROS2 uses  ament  as its default build/installation tool.\n     cd ros2_ws\n    sudo -sE\n    ament build",
+            "title": "Installing"
+        },
+        {
+            "location": "/sema/sema-gpio/#running-the-demo",
+            "text": "Each of the code block below is a individual terminal with ROS2 environment veriable configured.   ros2 run demo_nodes_cpp talker -t neuron_gpio_cmd    root@neuron: ros2 run neuron_demo_gpio neuron_demo_gpio \n*  root@neuron: ros2 run neuron_demo_gpio neuron_omni_io     NOTE1: terminal can gain root access by first doing  sudo -sE  NOTE2: alternatively, you can publish the triggering topic manually by   run ros2 topic pub /neuron_hwm_cmd std_msgs/String \"data: 0\"",
+            "title": "Running the demo"
+        },
+        {
+            "location": "/sema/sema-gpio/#monitoring",
+            "text": "You can checkout the topics by:  ros2 topic list \nand  ros2 topic echo /TOPIC",
+            "title": "Monitoring"
+        },
+        {
+            "location": "/sema/sema-gpio/#what-should-happened",
+            "text": "Besides the information you see on each terminal, proper ROS2 topic is published.    neuron_demo_gpio  node \nSubscribes to topic  neuron_gpio_cmd  from  talker \nPublishes topic  neuron_gpio_data  of type  std_msgs::String    neuron_omni_io  node \nSubscribes to topic  neuron_gpio_cmd  from  talker \nControls the LEDs and read from switches",
+            "title": "What should happened?"
+        },
+        {
+            "location": "/sema/sema-gpio/#code-explained",
+            "text": "ANY  kind of std_msgs data from  TOPIC_CMD  will trigger the node to\npublish the next hardware monitor data to  TOPOC_DATA  topic. 1.  The setting of  TOPIC_CMD  and  TOPIC_DATA  can be found in  reuronHwmNode.hpp",
+            "title": "Code explained"
+        },
+        {
+            "location": "/sema/sema-gpio/#notice",
+            "text": "This application  MUST  be running under  SUDO -E  since the SEMA driver need both root privilege and the user-exported variables.",
+            "title": "Notice"
+        },
+        {
+            "location": "/sema/sema-gpio/#version",
+            "text": "0.1.0",
+            "title": "Version"
+        },
+        {
+            "location": "/sema/sema-gpio/#authors",
+            "text": "Alan Chen  -  Initial library  - (alan.chen@adlinktech.com)  Ewing Kang  -  Demo implementation  - (https://github.com/EwingKang)",
+            "title": "Authors"
+        },
+        {
+            "location": "/sema/sema-gpio/#license",
+            "text": "This project is licensed under the Apache License, Version 2.0",
+            "title": "License"
+        },
+        {
+            "location": "/sema/sema-gpio/#acknowledgments",
             "text": "",
-            "title": "Neuron SEMA User Guide"
+            "title": "Acknowledgments"
         },
         {
             "location": "/neuron-ddsbot/",

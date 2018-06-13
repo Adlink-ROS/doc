@@ -31,20 +31,20 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
     
     
       
-        <title>Neuron DDSBot - ADLINK Neuron Documents</title>
+        <title>SEMA GPIO - ADLINK Neuron Documents</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.8d40d89b.css">
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -55,7 +55,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
   </head>
@@ -72,7 +72,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#neuron-ddsbot" tabindex="1" class="md-skip">
+      <a href="#sema-user-guide-for-gpio-with-adlnk-neuron-amitx-motherboard" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -81,7 +81,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="ADLINK Neuron Documents" class="md-header-nav__button md-logo">
+        <a href="../.." title="ADLINK Neuron Documents" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -98,7 +98,7 @@
                 ADLINK Neuron Documents
               </span>
               <span class="md-header-nav__topic">
-                Neuron DDSBot
+                SEMA GPIO
               </span>
             
           
@@ -169,7 +169,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Introduction" class="md-nav__link">
+    <a href="../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -179,10 +179,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Neuron SEMA User Guide
@@ -198,23 +200,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../sema/sema-gpio/" title="SEMA GPIO" class="md-nav__link">
-      SEMA GPIO
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
@@ -226,11 +211,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Neuron DDSBot
+        SEMA GPIO
       </label>
     
-    <a href="./" title="Neuron DDSBot" class="md-nav__link md-nav__link--active">
-      Neuron DDSBot
+    <a href="./" title="SEMA GPIO" class="md-nav__link md-nav__link--active">
+      SEMA GPIO
     </a>
     
       
@@ -244,58 +229,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" title="Abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-team" title="Developer &amp; Team" class="md-nav__link">
-    Developer &amp; Team
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#software-architecture" title="Software Architecture" class="md-nav__link">
-    Software Architecture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-architecture" title="Hardware Architecture" class="md-nav__link">
-    Hardware Architecture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorial" title="Tutorial" class="md-nav__link">
-    Tutorial
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#system-prerequisite" title="System prerequisite" class="md-nav__link">
-    System prerequisite
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#simulation-stage-two-computers" title="Simulation (stage, two computers)" class="md-nav__link">
-    Simulation (stage, two computers)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-robot-raspberrypi3" title="Real robot (raspberryPi3)" class="md-nav__link">
-    Real robot (raspberryPi3)
+  <a href="#installing" title="Installing" class="md-nav__link">
+    Installing
   </a>
   
 </li>
@@ -306,8 +256,70 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#running-the-demo" title="Running the demo" class="md-nav__link">
+    Running the demo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" title="Monitoring" class="md-nav__link">
+    Monitoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-should-happened" title="What should happened?" class="md-nav__link">
+    What should happened?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-explained" title="Code explained" class="md-nav__link">
+    Code explained
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notice" title="Notice" class="md-nav__link">
+    Notice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version" title="Version" class="md-nav__link">
+    Version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" title="License" class="md-nav__link">
     License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" title="Acknowledgments" class="md-nav__link">
+    Acknowledgments
   </a>
   
 </li>
@@ -322,6 +334,11 @@
     
   </li>
 
+        
+      </ul>
+    </nav>
+  </li>
+
     
       
       
@@ -329,7 +346,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../neuron-neuronbot/" title="Neuron NeuronBot" class="md-nav__link">
+    <a href="../../neuron-ddsbot/" title="Neuron DDSBot" class="md-nav__link">
+      Neuron DDSBot
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../neuron-neuronbot/" title="Neuron NeuronBot" class="md-nav__link">
       Neuron NeuronBot
     </a>
   </li>
@@ -341,7 +370,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../neuron-omnibot/" title="Neuron OmniBot" class="md-nav__link">
+    <a href="../../neuron-omnibot/" title="Neuron OmniBot" class="md-nav__link">
       Neuron OmniBot
     </a>
   </li>
@@ -368,58 +397,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#abstract" title="Abstract" class="md-nav__link">
-    Abstract
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-team" title="Developer &amp; Team" class="md-nav__link">
-    Developer &amp; Team
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#software-architecture" title="Software Architecture" class="md-nav__link">
-    Software Architecture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hardware-architecture" title="Hardware Architecture" class="md-nav__link">
-    Hardware Architecture
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tutorial" title="Tutorial" class="md-nav__link">
-    Tutorial
+  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+    Getting Started
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#system-prerequisite" title="System prerequisite" class="md-nav__link">
-    System prerequisite
+  <a href="#prerequisites" title="Prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#simulation-stage-two-computers" title="Simulation (stage, two computers)" class="md-nav__link">
-    Simulation (stage, two computers)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#real-robot-raspberrypi3" title="Real robot (raspberryPi3)" class="md-nav__link">
-    Real robot (raspberryPi3)
+  <a href="#installing" title="Installing" class="md-nav__link">
+    Installing
   </a>
   
 </li>
@@ -430,8 +424,70 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#running-the-demo" title="Running the demo" class="md-nav__link">
+    Running the demo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" title="Monitoring" class="md-nav__link">
+    Monitoring
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-should-happened" title="What should happened?" class="md-nav__link">
+    What should happened?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-explained" title="Code explained" class="md-nav__link">
+    Code explained
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notice" title="Notice" class="md-nav__link">
+    Notice
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version" title="Version" class="md-nav__link">
+    Version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authors" title="Authors" class="md-nav__link">
+    Authors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#license" title="License" class="md-nav__link">
     License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acknowledgments" title="Acknowledgments" class="md-nav__link">
+    Acknowledgments
   </a>
   
 </li>
@@ -453,86 +509,82 @@
               
                 
                 
-                <h1 id="neuron-ddsbot">Neuron DDSBot</h1>
-<p>You can check the source code from <a href="https://github.com/Adlink-ROS/adlink_ddsbot">DDSBot repository</a></p>
-<h2 id="abstract">Abstract</h2>
-<p>Swarm robots using Opensplice DDS with ROS 1&amp;2<br />
-[Official Slides] <a href="https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/Next-Gen_Smart_Manufacturing.pdf">https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/Next-Gen_Smart_Manufacturing.pdf</a><br />
-[Youtube Video] <a href="https://www.youtube.com/watch?v=7ZIDkLKD4Y8">https://www.youtube.com/watch?v=7ZIDkLKD4Y8</a><br />
-<a href="https://www.youtube.com/watch?v=7ZIDkLKD4Y8"><img alt="alt text" src="http://img.youtube.com/vi/7ZIDkLKD4Y8/0.jpg" /></a></p>
-<h2 id="developer-team">Developer &amp; Team</h2>
-<p>HaoChih Lin (<a href="mailto:haochih.lin@adlinktech.com">haochih.lin@adlinktech.com</a>)<br />
-Chester Tseng (<a href="mailto:chester.tseng@adlinktech.com">chester.tseng@adlinktech.com</a>)<br />
-Erik Boasson (<a href="mailto:erik.boasson@adlinktech.com">erik.boasson@adlinktech.com</a>)<br />
-Ryan Chen (<a href="mailto:ryanjb.chen@adlinktech.com">ryanjb.chen@adlinktech.com</a>)</p>
-<p>ADLINK Technology, Inc<br />
-Advanced Robotic Platform Group</p>
-<h2 id="software-architecture">Software Architecture</h2>
-<p><img alt="alt text" src="https://raw.githubusercontent.com/Adlink-ROS/adlink_ddsbot/release-1.0/document/adlink_ddsbot_softarch.jpg" /></p>
-<h2 id="hardware-architecture">Hardware Architecture</h2>
-<p><img alt="alt text" src="https://raw.githubusercontent.com/Adlink-ROS/adlink_ddsbot/release-1.0/document/adlink_ddsbot_hardarch.jpg" />
-Build your own low-cost ddsbot (~250USD)<br />
-[Assembling PDF] <a href="https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/hardware/adlink_ddsbot_hardware.pdf">adlink_ddsbot/document/hardware/adlink_ddsbot_hardware.pdf</a></p>
-<p>[Arduino firmware]<br />
-For UNO (motor control): <a href="https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/arduino/motor_control/motor_control.ino">adlink_ddsbot/document/arduino/motor_control/motor_control.ino</a> 
-For Nano (GY85 IMU): <a href="https://github.com/Adlink-ROS/adlink_ddsbot/blob/release-1.0/document/arduino/Razor_AHRS/Razor_AHRS.ino">adlink_ddsbot/document/arduino/Razor_AHRS/Razor_AHRS.ino</a></p>
-<h2 id="tutorial">Tutorial</h2>
-<h3 id="system-prerequisite">System prerequisite</h3>
-<p>[Desktop]</p>
+                <h1 id="sema-user-guide-for-gpio-with-adlnk-neuron-amitx-motherboard">SEMA User Guide for GPIO with ADLNK Neuron AmITX-Motherboard</h1>
+<p><em>ADLINK demo gpio example ROS package</em>:</p>
+<p><a href="https://github.com/Adlink-ROS/neuron_demo_gpio">Adlink-ROS/neuron_demo_gpio</a></p>
+<p>This package is a demonstration of the integration of ROS2 and onboard GPIO control. It will provide ADLINK omni-NeuronBot peripheral sensor and visual indicators of robot state. The GPIO control is implemented with the ADLINK Smart Embedded Management Agent (SEMA) function, which comes with the Neuron AmITX-Motherboard. The SEMA features various board monitoring, failsafe, as well as GPIO and I2C functionality.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HJTgT1nZ8aM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>These instructions will get you a copy of this demo and running on your local machine.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>Hardware and library<br />
+You'll need the ADLINK SEMA library and a compatible motherboard to run this example. You can conatct <strong>bill.wang@adlinktech.com</strong> for more information.</li>
+<li>Download the source of this project to your ROS2 workspace<br />
+<code>cd ros2_ws/src/ros2
+    git clone https://github.com/EwingKang/neuron_demo_gpio.git</code>  </li>
+<li>4 LEDs, 2 switches(one tactile, one contact)</li>
+<li>Your motherboard and GPIO connected  </li>
+</ol>
+<h3 id="installing">Installing</h3>
+<ol>
+<li>
+<p>Install ADLINK SEMA</p>
+</li>
+<li>
+<p>Setup soft link (by executing <code>setlink.sh</code> under <code>/lib</code> )<br />
+Run the following command in the terminal command. If you get something like <em><code>error: no such file as...</code></em>, you'll need to make the setlink.sh executable by <code>chmod +x setlink.sh</code>.
+    <code>cd ${project_root}/lib
+        e.g.: cd ros2_ws/src/ros2/neuron_demo_gpio/lib
+    ./setlink.sh</code>  </p>
+</li>
+<li>
+<p>Compile the source code<br />
+We'll need root access for library linking, that is done by the second step below; ROS2 uses <em>ament</em> as its default build/installation tool.
+    <code>cd ros2_ws
+    sudo -sE
+    ament build</code>  </p>
+</li>
+</ol>
+<h2 id="running-the-demo">Running the demo</h2>
+<p>Each of the code block below is a individual terminal with ROS2 environment veriable configured.
+<em> <code>ros2 run demo_nodes_cpp talker -t neuron_gpio_cmd</code>
+</em> <code>root@neuron: ros2 run neuron_demo_gpio neuron_demo_gpio</code>
+* <code>root@neuron: ros2 run neuron_demo_gpio neuron_omni_io</code>  </p>
+<p><em>NOTE1: terminal can gain root access by first doing <code>sudo -sE</code></em>
+<em>NOTE2: alternatively, you can publish the triggering topic manually by  <code>run ros2 topic pub /neuron_hwm_cmd std_msgs/String "data: 0"</code></em></p>
+<h3 id="monitoring">Monitoring</h3>
+<p>You can checkout the topics by:<br />
+<code>ros2 topic list</code><br />
+and<br />
+<code>ros2 topic echo /TOPIC</code></p>
+<h3 id="what-should-happened">What should happened?</h3>
+<p>Besides the information you see on each terminal, proper ROS2 topic is published. 
+<em> <strong>neuron_demo_gpio</strong> node<br />
+Subscribes to topic <em>neuron_gpio_cmd</em> from <em>talker</em><br />
+Publishes topic <em>neuron_gpio_data</em> of type <em>std_msgs::String</em><br />
+</em> <strong>neuron_omni_io</strong> node<br />
+Subscribes to topic <em>neuron_gpio_cmd</em> from <em>talker</em><br />
+Controls the LEDs and read from switches  </p>
+<h2 id="code-explained">Code explained</h2>
+<p><strong>ANY</strong> kind of std_msgs data from <strong>TOPIC_CMD</strong> will trigger the node to
+publish the next hardware monitor data to <strong>TOPOC_DATA</strong> topic.
+<strong>1.</strong> The setting of <strong>TOPIC_CMD</strong> and <strong>TOPIC_DATA</strong> can be found in <strong><em>reuronHwmNode.hpp</em></strong></p>
+<h2 id="notice">Notice</h2>
+<ol>
+<li>This application <strong>MUST</strong> be running under <strong>SUDO -E</strong> since the SEMA driver need both root privilege and the user-exported variables.</li>
+</ol>
+<h2 id="version">Version</h2>
+<p>0.1.0</p>
+<h2 id="authors">Authors</h2>
 <ul>
-<li>ROS 1.0
-  (Kinetic: <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu)">http://wiki.ros.org/kinetic/Installation/Ubuntu)</a></li>
-<li>ROS 2.0 (tested on Ardent)</li>
-<li>create your own catkin_ws
-  (<a href="http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)">http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)</a></li>
-<li>Install required dependencies:<br />
-<code>$ sudo apt-get install git ros-kinetic-navigation ros-kinetic-geographic-msgs ros-kinetic-slam-gmapping ros-kinetic-mrpt-slam ros-kinetic-mrpt-icp-slam-2d ros-kinetic-robot-localization ros-kinetic-stage* -y</code></li>
-<li><code>git clone adlink_ddsbot to your catkin_ws/src and compile</code></li>
+<li><strong>Alan Chen</strong> - <em>Initial library</em> - (alan.chen@adlinktech.com)</li>
+<li><strong>Ewing Kang</strong> - <em>Demo implementation</em> - (https://github.com/EwingKang)</li>
 </ul>
-<h3 id="simulation-stage-two-computers">Simulation (stage, two computers)</h3>
-<ol>
-<li>Check the hostname (should be unique in the network)</li>
-<li>Check the system time synchronization ($ sudo ntpdate IP_TARGET)</li>
-<li>Open a terminal (remember to source ros2 &amp; ros1 setup.bash)</li>
-<li><code>$ export HOSTNAME</code></li>
-<li><code>$ roslaunch adlink_ddsbot Swarm_Sim_Stage.launch</code></li>
-<li><code>$ ros2 run ros1_bridge parameter_bridge</code></li>
-<li>Repeat the same steps on another computer/robot
-    (both should be in the same network)</li>
-<li>Then, each robot can be aware of all the others shown on the rviz.</li>
-</ol>
-<h3 id="real-robot-raspberrypi3">Real robot (raspberryPi3)</h3>
-<p>[Image files]
-Download pre-built image for Pi3 (ubuntu mate 16.04, ros 1&amp;2, 13GB)<br />
-link: <a href="https://drive.google.com/open?id=0BxI3PXhTd_3HWmh2c2VSbWFNRHM">https://drive.google.com/open?id=0BxI3PXhTd_3HWmh2c2VSbWFNRHM</a><br />
-Extract the file from .gz file:
-<code>$ gunzip -c ADLINK_DDSBot_Pi3_20171002.img.gz &gt; ADLINK_DDSBot_Pi3_20171002.img</code>
-Burn image file to SD card</p>
-<p>[Setup steps]</p>
-<ol>
-<li>Connect Pi3 with your desktop by either ethernet cable or debug cable</li>
-<li>Power-on and login: (passward is: adlinkros)</li>
-<li>hdmi display: you can see the ADLink logo on the desktop</li>
-<li>ethernet: the default id address of provided image is 10.0.0.1 (<code>$ ssh pi@10.0.0.1</code>)</li>
-<li>debug cable: enter the password</li>
-<li>Change robot's hostname and connect to local network</li>
-<li>Synchronize the system time through AP server/specific computer
-    (<code>$ sudo ntpdate IP_ADDRESS</code>)</li>
-<li>Change the ROS 1 multi-machines variables in .bashrc
-    (for each robot, it has own roscore)</li>
-<li>For Single robot test: <code>$ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Single.launch</code></li>
-<li>For Swarm robots demo:</li>
-<li><code>$ roslaunch adlink_ddsbot Adlink_DDSBot_Nav_Swarm.launch</code></li>
-<li><code>$ ros2 run ros1_bridge parameter_bridge</code></li>
-<li>Using remote computer to initial &amp; set goal for the ddsbot through RVIZ</li>
-<li>Do the same thing on another ddsbots (in the same network),
-    once the ros1_bridge has been executed, all others ddsbots can be visualized on RVIZ.</li>
-</ol>
-<p>[Node Graph]</p>
-<p><img alt="alt text" src="https://raw.githubusercontent.com/Adlink-ROS/adlink_ddsbot/release-1.0/document/adlink_ddsbot_nodes.png" /></p>
 <h2 id="license">License</h2>
-<p>Apache 2.0<br />
-Copyright 2017 ADLINK Technology, Inc.</p>
+<p>This project is licensed under the Apache License, Version 2.0</p>
+<h2 id="acknowledgments">Acknowledgments</h2>
                 
                   
                 
@@ -553,7 +605,7 @@ Copyright 2017 ADLINK Technology, Inc.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../sema/sema-gpio/" title="SEMA GPIO" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../.." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -562,19 +614,19 @@ Copyright 2017 ADLINK Technology, Inc.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                SEMA GPIO
+                Introduction
               </span>
             </div>
           </a>
         
         
-          <a href="../neuron-neuronbot/" title="Neuron NeuronBot" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../neuron-ddsbot/" title="Neuron DDSBot" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Neuron NeuronBot
+                Neuron DDSBot
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -614,11 +666,11 @@ Copyright 2017 ADLINK Technology, Inc.</p>
       
     </div>
     
-      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      <script src="../../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.3",url:{base:"../.."}})</script>
       
-        <script src="../javascripts/extra.js"></script>
+        <script src="../../javascripts/extra.js"></script>
       
     
     
