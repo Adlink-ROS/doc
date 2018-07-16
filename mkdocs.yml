@@ -6,7 +6,13 @@ pages:
   - Neuron DDSBot: neuron-ddsbot.md
   - Neuron NeuronBot: neuron-neuronbot.md
   - Neuron OmniBot: neuron-omnibot.md
-theme: material
+theme:
+  name: material
+  custom_dir: 'theme/'
+  logo: 'img/neuron_logo.'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu'
 extra_css:
   - 'stylesheets/extra.css'
 extra_javascript:
