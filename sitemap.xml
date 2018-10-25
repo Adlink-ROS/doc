@@ -2,27 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-16</lastmod>
+     <lastmod>2018-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/sema/sema-gpio/</loc>
-     <lastmod>2018-07-16</lastmod>
+     <lastmod>2018-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/neuron-ddsbot/</loc>
-     <lastmod>2018-07-16</lastmod>
+     <lastmod>2018-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/neuron-neuronbot/</loc>
-     <lastmod>2018-07-16</lastmod>
+     <lastmod>2018-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/neuron-omnibot/</loc>
-     <lastmod>2018-07-16</lastmod>
+     <lastmod>2018-10-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/neuron-tegrabot/</loc>
+     <lastmod>2018-10-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
