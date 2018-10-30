@@ -1,11 +1,14 @@
 site_name: ADLINK Neuron Documents
 pages:
   - Introduction: index.md
-  - Neuron SEMA User Guide:
+  - Neuron Platform Guide:
     - SEMA GPIO: sema/sema-gpio.md
-  - Neuron DDSBot: neuron-ddsbot.md
-  - Neuron NeuronBot: neuron-neuronbot.md
-  - Neuron OmniBot: neuron-omnibot.md
+  - Neuron board:
+    - DDSBot: neuron-ddsbot.md
+    - NeuronBot: neuron-neuronbot.md
+    - OmniBot: neuron-omnibot.md
+  - Jetson board:
+    - TegraBot: neuron-tegrabot.md
 theme:
   name: material
   custom_dir: 'theme/'
